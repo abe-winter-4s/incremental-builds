@@ -14,7 +14,7 @@ src/main/scala/B/B.scala
 ## experiments
 
 | experiment | expectation | pants | sbt ~compile |
-|===|===|===|===|
+|---|---|---|---|
 | change public signature of A  | invalidate B | 2 | 2 |
 | change private signature of A | don't invalidate B | 2 | 1 |
 | change function body of A     | don't invalidate B | 2 | 1 |
